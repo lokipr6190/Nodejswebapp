@@ -1,5 +1,5 @@
 #specify the base image
-FROM node:14-alpine
+FROM node:20-alpine
 
 #fix the working directory of the container.
 WORKDIR /usr/myapp
@@ -11,4 +11,5 @@ COPY ./ ./
 RUN npm install
 
 #run the start up command
+
 CMD ["npm","start"]
